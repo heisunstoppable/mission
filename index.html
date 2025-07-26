@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./image/unnamed.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <title>Mission</title>
+</head>
+<body>
+
+  <header class="bg-[#fff8ed] p-5 flex justify-between items-center">
+    <div class="w-fit mx-auto">
+      <img src="./image/unnamed.png" alt="" class=" w-30">
+    </div>
+
+    <ul class="gap-7 text-[20px] font-bold items-center mx-auto hidden" id="nav-desk">
+      <a href="index.html">HOME</a>
+      <a href="ourteam.html">OUR TEAM</a>
+      <a href="event.html">EVENTS</a>
+      <a href="volunteer.html">VOLUNTEER</a>
+      <a href="news.html">NEWS</a>
+      <div onclick="openModal()" class="bg-bola text-black px-5 py-2 rounded-4xl font-bold text-center w-fit mx-auto cursor-pointer hover:bg-[#a88856]">DONATE NOW</div>
+    </ul>
+
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown()">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="ourteam.html">our team</a>
+        <a href="event.html">events</a>
+        <a href="volunteer.html">volunteer</a>
+        <a href="news.html">news</a>
+
+        <div onclick="openModal()" class="bg-bola text-black px-7 py-2 rounded-4xl font-bold mt-5 text-center w-fit mx-auto">DONATE TODAY</div>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="">
+    <div class="p-5 bg-[url('./image/ChatGPT1.png')] bg-center bg-cover h-[25rem] min-md:pt-[5%]">
+      <p class="text-bola font-bold min-md:pl-[15%]">OUR MISSION: LITERACY FOR ALL</p>
+      <h1 class="text-6xl font-bold text-white mt-3 min-md:pl-[15%]">Education for a Better Tomorrow.</h1>
+      
+      <div class="mt-5">
+          <!-- Trigger button -->
+         <div onclick="openModal()" class="bg-bola text-black w-fit px-10 py-4 rounded-4xl font-bold min-md:ml-[15%]">DONATE TODAY</div>
+         <!-- Modal Background -->
+          <div id="modal" class="fixed inset-0 bg-[#000000d6] bg-opacity-50 flex items-center justify-center hidden z-50">
+            <!-- Modal Content -->
+            <div class="bg-white shadow-lg p-6 w-full max-w-md relative mx-5">
+              <!-- Close Button -->
+              <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-xl font-bold">&times;</button>
+              <h2 class="text-2xl font-bold mb-4 text-center">Donate Now!</h2>
+              <!-- Sign In Form -->
+              <form>
+                <div class="mb-4">
+                  <label class="block mb-1 text-gray-700">Email</label>
+                  <input type="email" class="w-full border px-3 py-2 rounded" required title="Email">
+                </div>
+                <button type="submit" class="font-bold bg-bola text-black px-4 py-2 rounded w-full text-center">DONATE NOW </button>
+                <p class="text-center text-[15px] font-bold mt-4">Privacy Policy: We hate spam and promise to keep your email address safe</p>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="p-10">
+    <div class="m-auto min-md:w-[50%]">
+      <h1 class="text-center text-4xl font-bold">The Mission</h1>
+      <p class="text-[15px] mt-4 md:text-[20px]">At MISSION, we firmly believe that education serves as the backbone to solving many of the world’s problems. Our goal is to collaborate with schools, communities, and families throughout sub-Saharan Africa to stress the importance of literacy and ensure children and young adults have access to the educational materials needed to succeed.</p>
+      <div class="min-md:flex gap-10">
+        <div class="mt-4 min-md:w-[100%]">
+          <h1 class="text-2xl font-semibold">The Challenge</h1>
+          <p class="text-[15px] md:leading-7">
+            Sub-Saharan Africa consists of the continent of Africa that lies south of the Sahara. Countries within the region include Botswana, Chad, Ethiopia, Nigeria, South Africa, Zimbabwe, as well as 40 additional countries. Sub-Saharan Africa has the highest rates of education exclusion on the continent. Over one-fifth of children between the ages of 6 and 11 are out of school, and more than 45 million children and young adults between the ages of 15 and 24 are illiterate.Did you know: <br>
+            
+            Illiteracy costs the global economy approximately $1.5 trillion annually.
+          </p>
+        </div>
+        <div class="mt-4 min-md:w-[100%]">
+          <h1 class="text-2xl font-semibold">Our Solution</h1>
+          <p class="text-[15px] md:leading-7">
+            Mission is one of the leading children and young adult literacy nonprofit organizations in the United States. Each year we send thousands of supplies—textbooks, e-books, writing materials, tablets, laptops, and more—to specific African schools or communities in need.
+          </p>
+          <img src="./image/unnamed.jpg" alt="" class="mt-4 xl:w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+  <article class="bg-[url(./image/getty.jpg)] h-[20rem] bg-center bg-cover">
+    <div class="bg-[#f5a627a4] h-[20rem] justify-center items-center flex">
+      <h1 class="text-5xl font-bold p-10 text-center w-[80%]">How we make a difference</h1>
+    </div>
+  </article>
+  
+  <section class="p-10">
+    <div class="m-auto md:flex md:w-[70%] gap-10">
+      <div class="mt-4">
+        <h1 class="text-2xl font-semibold">Partner</h1>
+        <p class="text-[15px] mt-2 md:leading-7">Mission partners with organizations throughout sub-Saharan Africa to find and determine communities and schools in need of educational supplies.</p>
+      </div>
+      <div class="mt-4">
+        <h1 class="text-2xl font-semibold">Collect</h1>
+        <p class="text-[15px] mt-2 md:leading-7">Our volunteers and local partners across the United States organize book and educational resource supply drives and raise the funds required to ship supplies overseas.</p>
+      </div>
+      <div class="mt-4">
+        <h1 class="text-2xl font-semibold">Distribute</h1>
+        <p class="text-[15px] mt-2 md:leading-7">We ship all supplies to our overseas partners who then distribute to designated communities and schools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-b from-white to-[#ecd7b5] p-10">
+    <h1 class="text-6xl font-semibold text-center mb-5">Our Success</h1>
+    <ul class="list-disc ml-6 md:w-[50%] md:mx-auto md:text-[20px]">
+      <p class="">Thanks to generous donors, hardworking volunteers, and our partners throughout the United States and abroad, in 2020 Mission:</p>
+      <li class="mt-5">Distributed more than 85,000 books, 3,600 laptops, and 2,800 tablets to schools and communities across 37 countries in sub-Saharan Africa.</li>
+      <li>Raised more than $4.7 million in donations.</li>
+      <li>Provided more than 12,400 notebooks, 15,500 pencils, and $120,000 worth of additional supplies.</li>
+    </ul>
+    <h1 class="text-6xl font-semibold text-center my-10">Donate Today</h1>
+    
+    <div class="bg-bola py-4 px-10 rounded-4xl mt-3 mb-10 mx-auto w-fit" onclick="openModal()">
+      <p class="text-center font-bold">DONATE</p>
+    </div>
+    <div>
+      <div class="text-center">
+        <h1 class="font-semibold">QUESTIONS?</h1>
+        <p class="mt-2">info@mission.com</p>
+      </div>
+      <div class="text-center mt-4">
+        <h1 class="font-semibold">CALL US</h1>
+        <p class="mt-2">+2348061145542</p>
+      </div>
+      <div class="text-center mt-4">
+        <h1 class="font-semibold">DONATION</h1>
+        <p class="mt-2">donation@mission.com</p>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black p-5 text-center">
+    <ul class="text-white flex gap-5 text-center m-auto w-fit">
+      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+    <p class="text-white text-[12px] mt-4">© 2025 All Rights Reserved. <br> #codewithunstoppable🖤 </p>
+  </footer>
+
+  <script src="./web.js"></script>
+</body>
+</html>

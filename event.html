@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./image/unnamed.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+  <title>Mission</title>
+</head>
+<body>
+    <header class="bg-[#fff8ed] p-5 flex justify-between items-center">
+      <div class="w-fit mx-auto">
+      <img src="./image/unnamed.png" alt="" class=" w-30">
+    </div>
+
+    <ul class="gap-7 text-[20px] font-bold items-center mx-auto hidden" id="nav-desk">
+      <a href="index.html">HOME</a>
+      <a href="ourteam.html">OUR TEAM</a>
+      <a href="event.html">EVENTS</a>
+      <a href="volunteer.html">VOLUNTEER</a>
+      <a href="news.html">NEWS</a>
+      <div onclick="openModal()" class="bg-bola text-black px-5 py-2 rounded-4xl font-bold text-center w-fit mx-auto cursor-pointer hover:bg-[#a88856]">DONATE NOW</div>
+    </ul>
+      
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="ourteam.html">our team</a>
+          <a href="event.html">events</a>
+          <a href="volunteer.html">volunteer</a>
+          <a href="news.html">news</a>
+          <div onclick="openModal()" class="bg-bola text-black px-7 py-2 rounded-4xl font-bold mt-5 text-center w-fit mx-auto">DONATE TODAY</div>
+        </div>
+      </div>
+    </header>
+
+  <section class="p-10 bg-gradient-to-b from-white to-[#ecd7b5] justify-items-center">
+    <h1 class="text-7xl font-bold text-center mb-5">Help us help others<span style="color:#f1b85d ;">.</span></h1>
+    <h1 class="text-6xl font-semibold text-center my-10">Ready to make a difference? <br>Donate Today!</h1>
+    <p class="md:w-[60%] lg:w-[50%]">
+      At Mission, our purpose is to collaborate with schools, communities, and families throughout sub-Saharan Africa to stress the importance of literacy and ensure children and young adults have access to the educational materials needed to succeed. Each year we host various book and educational resource supply drives. We accept monetary donations as well as supply donations including used books, notebooks, writing materials, and other classroom supplies. The money we raise during events also funds textbooks, e-books, tablets, and laptops.
+    </p>
+    <img src="./image/unnamed (5).jpg" alt="" class="mx-auto mt-5 w-full md:w-[60%] lg:w-[50%]">
+    
+    <h1 class="text-6xl font-semibold text-center my-10 md:text-5xl">Upcoming events:</h1>
+    <div class="min-md:flex md:w-[60%] gap-10 min-xl:w-[50%]">
+      <div>
+        <p class="md:text-[20px]">
+          <span class="font-bold">Book Drive:</span> April 20 (Portland, OR). Stop by our main office (2024 Pine Street) to donate gently used books appropriate for children and young adults. Monetary donations will also be accepted during this time.
+        </p>
+        <img src="./image/unnamed (1).jpg" alt="" class="mx-auto mt-5 w-full">
+      </div>
+      <div>
+        <p class="mt-5 md:mt-0 md:text-[20px]">
+          <span class="font-bold">Classroom Supplies Drop-off:</span> June 15 (Atlanta, GA). We are looking for writing utensils, notebooks, crayons/markers, and gently used books for children (ages 3 to 6). Monetary donations will also be accepted during this time. Location: 18472 Winsdale Drive.
+        </p>
+        <p class="mt-5 md:text-[20px]">
+          <span class="font-bold">Classroom Supplies Drop-off:</span> June 15 (Atlanta, GA). We are looking for writing utensils, notebooks, crayons/markers, and gently used books for children (ages 3 to 6). Monetary donations will also be accepted during this time. Location: 18472 Winsdale Drive.
+        </p>
+      </div>
+
+    </div>
+
+    <h1 class="text-6xl font-semibold text-center my-10">Donate Today</h1>
+
+    <div class="bg-bola p-4 rounded-4xl w-fit mt-3 mb-10 mx-auto px-10">
+      <p class="text-center font-bold" onclick="openModal()">DONATE</p>
+    </div>
+    <div>
+      <div class="text-center">
+        <h1 class="font-semibold">QUESTIONS?</h1>
+        <p class="mt-2">info@mission.com</p>
+      </div>
+      <div class="text-center mt-4">
+        <h1 class="font-semibold">CALL US</h1>
+        <p class="mt-2">+2348061145542</p>
+      </div>
+      <div class="text-center mt-4">
+        <h1 class="font-semibold">DONATION</h1>
+        <p class="mt-2">donation@mission.com</p>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black p-5 text-center">
+    <ul class="text-white flex gap-5 text-center m-auto w-fit">
+      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+    <p class="text-white text-[12px] mt-4">© 2025 All Rights Reserved. <br> #codewithunstoppable🖤 </p>
+  </footer>
+
+  <!-- Modal Background -->
+    <div id="modal" class="fixed inset-0 bg-[#000000d6] bg-opacity-50 flex items-center justify-center hidden z-50">
+      <!-- Modal Content -->
+      
+      <div class="bg-white shadow-lg p-6 w-full max-w-md relative mx-3">
+      
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-xl font-bold">&times;</button>
+        <h2 class="text-2xl font-bold mb-4 text-center">Donate Now!</h2>
+        <!-- Sign In Form -->
+        <form>
+          <div class="mb-4">
+            <label class="block mb-1 text-gray-700">Email</label>
+            <input type="email" class="w-full border px-3 py-2 rounded" required title="Email">
+          </div>
+          <button type="submit" class="font-bold bg-bola text-black px-4 py-2 rounded w-full text-center">DONATE NOW </button>
+          <p class="text-center text-[15px] font-bold mt-4">Privacy Policy: We hate spam and promise to keep your email address safe</p>
+        </form>
+      </div>
+    </div>
+
+  <script src="./web.js"></script>
+</body>
+</html>

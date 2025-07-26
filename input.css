@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@theme{
+    --color-temitope: #404040;
+    --color-bola: #f1b85d;
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./image/unnamed.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <title>Mission</title>
+</head>
+<body>
+  <header class="bg-[#fff8ed] p-5 flex justify-between items-center">
+    <div class="w-fit mx-auto">
+      <img src="./image/unnamed.png" alt="" class=" w-30">
+    </div>
+
+    <ul class="gap-7 text-[20px] font-bold items-center mx-auto hidden" id="nav-desk">
+      <a href="index.html">HOME</a>
+      <a href="ourteam.html">OUR TEAM</a>
+      <a href="event.html">EVENTS</a>
+      <a href="volunteer.html">VOLUNTEER</a>
+      <a href="news.html">NEWS</a>
+      <div onclick="openModal()" class="bg-bola text-black px-5 py-2 rounded-4xl font-bold text-center w-fit mx-auto cursor-pointer hover:bg-[#a88856]">DONATE NOW</div>
+    </ul>
+      
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown()">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="ourteam.html">our team</a>
+        <a href="event.html">events</a>
+        <a href="volunteer.html">volunteer</a>
+        <a href="news.html">news</a>
+
+        <div onclick="openModal()" class="bg-bola text-black px-7 py-2 rounded-4xl font-bold mt-5 text-center w-fit mx-auto">DONATE TODAY</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="p-10 bg-gradient-to-b from-white to-[#ecd7b5] justify-items-center">
+    <h1 class="text-7xl font-bold text-center mb-5">Without your help, we cannot succeed<span style="color:#f1b85d ;">.</span></h1>
+
+    <div class="md:flex md:w-[70%] gap-10 items-center">
+      <div>
+        <h1 class="text-6xl font-semibold text-center my-10 md:text-justify">Volunteer Today!</h1>
+        <p class="md:text-[20px]">
+          Volunteers throughout the United States add the fuel to our organization’s fire. Thanks to the hundreds of volunteers around the country who dedicate their time and hard work to Mission, we are consistently able to exceed our year by year goals.
+        </p>
+      </div>
+      <img src="./image/unnamed (2).jpg" alt="" class="mx-auto mt-5 w-full md:w-[60%]">
+    </div>
+    
+    <h1 class="text-6xl font-semibold text-center my-10">Ways to volunteer</h1>
+
+    <p class="">
+      No matter your location, there are many ways to work with us. Volunteer opportunities include:
+    </p>
+    <ul class="list-disc ml-6">
+      <li class="mt-5">Hosting a supply/book drive in your local town.</li>
+      <li class="mt-3">Setting up donation bins/a donation program at your local library.</li>
+      <li class="mt-3">Coordinating donation opportunities with local schools and universities.</li>
+    </ul>
+
+    <h1 class="text-6xl font-semibold text-center my-10">Contact us Today</h1>
+    <p class="text-2xl text-center">If you are interested in volunteering with Mission, please contact us to via email or over the phone.</p>
+
+    <div>
+      <div class="text-center mt-10">
+        <h1 class="font-semibold">QUESTIONS?</h1>
+        <p class="mt-2">info@mission.com</p>
+      </div>
+      <div class="text-center mt-4">
+        <h1 class="font-semibold">CALL US</h1>
+        <p class="mt-2">+2348061145542</p>
+      </div>
+      <div class="text-center mt-4">
+        <h1 class="font-semibold">DONATION</h1>
+        <p class="mt-2">donation@mission.com</p>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black p-5 text-center">
+    <ul class="text-white flex gap-5 text-center m-auto w-fit">
+      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+    <p class="text-white text-[12px] mt-4">© 2025 All Rights Reserved. <br> #codewithunstoppable🖤 </p>
+  </footer>
+
+  <script src="./web.js"></script>
+</body>
+</html>
